@@ -1,0 +1,221 @@
+package codigo;
+ 
+public class Lista {
+    private Pessoa inicio;
+    private Pessoa fim;
+   
+    public Lista(){
+        this.inicio = null;
+        this.fim = null;
+    }
+   
+    private void adicionaNoInicio(Pessoa p){
+        //p<---X
+        inicio.setAnterior(p);
+        //p<--->X
+        p.setProximo(inicio);
+       
+        this.inicio = p;
+    }
+   
+    private void adicionaNoFim(Pessoa p){
+        fim.setProximo(p);
+        p.setAnterior(fim);
+        this.fim = p;
+    }
+   
+    private void adicionarNoMeio(Pessoa P){
+        Pessoa aux = this.inicio;
+                             //  aux.getNome() < P.getNome()
+        while(aux.getNome().compareTo(P.getNome()) <= 0){
+            System.out.println(aux.getNome()+" < "+P.getNome());
+            aux = aux.getProximo();
+            System.out.println("Aux = "+aux.getNome());
+        }
+       
+        System.out.println(P.getNome()+"---->"+aux.getNome());
+        P.setProximo(aux);
+       
+       
+       
+    }
+   
+   
+    public void adicionar(Pessoa p){
+       
+        //inicio
+        //meio
+        //fim
+       
+    }
+   
+   
+    public Pessoa getInicio() {
+        return inicio;
+    }
+ 
+    public void setInicio(Pessoa inicio) {
+        this.inicio = inicio;
+    }
+ 
+    public Pessoa getFim() {
+        return fim;
+    }
+ 
+    public void setFim(Pessoa fim) {
+        this.fim = fim;
+    }
+   
+    @Override
+    public String toString(){
+        Pessoa a = this.inicio;
+        String saida = "[";
+       
+        while(a.getProximo() != null){
+            saida += a.getNome()+"<--->";
+            a = a.getProximo();
+        }
+        saida += a.getNome()+"]";
+        return saida;
+    }
+ 
+    public static void main(String args[]){
+        Pessoa A = new Pessoa("A");
+        Pessoa B = new Pessoa("B");
+        Pessoa C = new Pessoa("C");
+        Pessoa D = new Pessoa("D");
+        Pessoa E = new Pessoa("E");
+        A.setProximo(B);
+        B.setProximo(C);
+        C.setProximo(E);
+       
+        B.setAnterior(A);
+        C.setAnterior(B);
+        E.setAnterior(C);
+       
+        Lista l = new Lista();
+        l.setInicio(A);
+        l.setFim(E);
+        System.out.println(l);
+        l.adicionarNoMeio(D);
+       
+       
+       
+    }
+   
+ 
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+
+package codigo;
+
+public class Lista {
+	private Pessoa inicio;
+	private Pessoa fim;
+	
+	public Lista(){
+		this.inicio = null;
+		this.fim = null;
+	}
+	
+	private void adicionaNoInicio(Pessoa p){
+		//p<---X
+		inicio.setAnterior(p);
+		//p<--->X
+		p.setProximo(inicio);
+		
+		this.inicio = p;
+	}
+	
+	private void adicionaNoFim(Pessoa p){
+		fim.setProximo(p);
+		p.setAnterior(fim);
+		this.fim = p;
+	}
+	
+	private void adicionarNoMeio(Pessoa P){
+		Pessoa aux = this.inicio;
+		                     //  aux.getNome() < P.getNome()
+		while(aux.getNome().compareTo(P.getNome()) <= 0){
+			System.out.println(aux.getNome()+" < "+P.getNome());
+			aux = aux.getProximo();
+			System.out.println("Aux = "+aux.getNome());
+		}
+		
+		System.out.println(P.getNome()+"---->"+aux.getNome());
+		P.setProximo(aux);
+		
+		
+		
+	}
+	
+	
+	public void adicionar(Pessoa p){
+		
+		//inicio
+		//meio
+		//fim
+		
+	}
+	
+	
+	public Pessoa getInicio() {
+		return inicio;
+	}
+
+	public void setInicio(Pessoa inicio) {
+		this.inicio = inicio;
+	}
+
+	public Pessoa getFim() {
+		return fim;
+	}
+
+	public void setFim(Pessoa fim) {
+		this.fim = fim;
+	}
+	
+	@Override
+	public String toString(){
+		Pessoa a = this.inicio;
+		String saida = "[";
+		
+		while(a.getProximo() != null){
+			saida += a.getNome()+"<--->";
+			a = a.getProximo();
+		}
+		saida += a.getNome()+"]";
+		return saida;
+	}
+
+	public static void main(String args[]){
+		Pessoa A = new Pessoa("A");
+		Pessoa B = new Pessoa("B");
+		Pessoa C = new Pessoa("C");
+		Pessoa D = new Pessoa("D");
+		Pessoa E = new Pessoa("E");
+		A.setProximo(B);
+		B.setProximo(C);
+		C.setProximo(E);
+		
+		B.setAnterior(A);
+		C.setAnterior(B);
+		E.setAnterior(C);
+		
+		Lista l = new Lista();
+		l.setInicio(A);
+		l.setFim(E);
+		System.out.println(l);
+		l.adicionarNoMeio(D);
+		
+		
+		
+	}
+	
+
+}

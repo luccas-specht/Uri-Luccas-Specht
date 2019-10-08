@@ -1,0 +1,82 @@
+package Proposta7;
+
+public class Main_Q8{
+
+
+public static void main(String args[]){
+    
+    Q8 ob1 = new Q8("1");
+    Q8 ob2 = new Q8("2");
+    Q8 ob3 = new Q8("3");
+    Q8 ob4 = new Q8("4");
+    Q8 ob5 = new Q8("5");
+    Q8 ob6 = new Q8("6");
+    Q8 ob7 = new Q8("7");
+    Q8 ob8 = new Q8("8");
+    Q8 ob9 = new Q8("9");
+    Q8 ob10 = new Q8("10");
+    Q8 ob11 = new Q8("11");
+    Q8 ob12 = new Q8("12");
+    
+  
+    ob1.setDireita(ob2);
+    ob1.setBaixo(ob4);
+    
+   
+    ob2.setEsquerda(ob1);
+    ob2.setDireita(ob3);
+    ob2.setBaixo(ob5);
+    
+    
+    ob3.setEsquerda(ob2);
+    ob3.setBaixo(ob6);
+    
+    ob4.setCima(ob1);
+    ob4.setDireita(ob5);
+    ob4.setBaixo(ob7);
+    
+    ob5.setCima(ob2);
+    ob5.setDireita(ob6);
+    ob5.setEsquerda(ob4);
+    ob5.setBaixo(ob8);
+    
+    ob6.setCima(ob3);
+    ob6.setEsquerda(ob5);
+    ob6.setBaixo(ob9);
+    
+    ob7.setCima(ob4);
+    ob7.setDireita(ob8);
+    ob7.setBaixo(ob10);
+    
+    ob8.setCima(ob5);
+    ob8.setDireita(ob9);
+    ob8.setEsquerda(ob7);
+    ob8.setBaixo(ob11);
+    
+    ob9.setCima(ob6);
+    ob9.setEsquerda(ob8);
+    ob9.setBaixo(ob12);
+    
+    ob10.setCima(ob7);
+    ob10.setDireita(ob11);
+    
+    ob11.setCima(ob8);
+    ob11.setEsquerda(ob10);
+    ob11.setDireita(ob12);
+    
+    ob12.setCima(ob9);
+    ob12.setEsquerda(ob11);
+    
+    
+    
+    
+    
+    System.out.println(ob1.getNome()+"-"+ob1.getDireita().getNome()+"-"+ob1.getDireita().getDireita().getNome() 
+    +"-" +ob1.getBaixo().getNome()+"-"+ob1.getBaixo().getDireita().getNome()+"-"+ob1.getBaixo().getDireita().getDireita().getNome()
+    +"-"+ob1.getBaixo().getBaixo().getNome()+"-"+ob1.getBaixo().getBaixo().getDireita().getNome()+"-"+ob1.getBaixo().getBaixo().getDireita().getDireita().getNome()
+    +"-"+ob1.getBaixo().getBaixo().getBaixo().getNome()+"-"+ob1.getBaixo().getBaixo().getBaixo().getDireita().getNome()+"-"+ob1.getBaixo().getBaixo().getBaixo().getDireita().getDireita().getNome());
+       
+    
+  
+}
+}    

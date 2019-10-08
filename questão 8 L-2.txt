@@ -1,0 +1,61 @@
+package Proposta7;
+
+public class Q8  {
+            private String nome;
+	    private Q8 cima;
+            private Q8 baixo;
+	    private Q8 direita;
+	    private Q8 esquerda;
+	   
+	    public Q8(String nome){
+	        this.nome = nome;
+                this.direita = null;
+	        this.esquerda = null;
+                this.cima = null;
+	        this.baixo = null;
+	        
+	    }
+	 
+	    public String getNome() {
+	        return nome;
+	    }
+	 
+	    public void setNome(String nome) {
+	        this.nome = nome;
+	    }
+	 
+	    public Q8 getDireita() {
+	        return direita;
+	    }
+	 
+	    public void setDireita(Q8 direita) {
+	        this.direita = direita;
+	    }
+	 
+	    public Q8 getEsquerda() {
+	        return esquerda;
+	    }
+	 
+	    public void setEsquerda(Q8 esquerda) {
+	        this.esquerda = esquerda;
+	    }
+	 
+            public Q8 getCima() {
+	        return cima;
+	    }
+	 
+	    public void setCima(Q8 cima) {
+	        this.cima = cima;
+	    }
+            
+            public Q8 getBaixo() {
+	        return baixo;
+	    }
+	 
+	    public void setBaixo(Q8 baixo) {
+	        this.baixo = baixo;
+	    }
+	}
+	 
+
+
