@@ -1,7 +1,7 @@
 package ABAP_desafios;
 
 import java.util.*;
-public class Desafio3 {
+public class Desafio2 {
 
 		public static void main(String args[]) {
 			Scanner tc = new Scanner(System.in);
