@@ -1,0 +1,4 @@
+#DESAFIO 1
+for i in range(10):
+  aux = '|'
+  print(aux * i)
