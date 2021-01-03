@@ -45,23 +45,3 @@ print('{} Multiplo(s) de 2'.format(a))
 print('{} Multiplo(s) de 3'.format(b))
 print('{} Multiplo(s) de 4'.format(c))
 print('{} Multiplo(s) de 5'.format(d))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,7 +1,8 @@
-#fila=[]
-#PRIMEIRO A ENTRAR É O PRIMEIRO A SAIR
+#fila=[] 
+#First In First Out: FIFO
+
 #pilha=[]
-#PRIMEIRO A ENTRAR É O ULTIMO A SAIR
+#First In Last Out: FILO
 
 while true:
     
@@ -16,7 +17,3 @@ while true:
      cartas_jogadas.append(str(pilha.pop()))
      pilha.insert(0,pilha.pop())
  print("Discarde cards:")
-
-
- 
- 

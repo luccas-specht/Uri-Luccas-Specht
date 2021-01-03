@@ -10,7 +10,3 @@ s=int(0)
  #  for i in range(a,(b-1),-1):
   #  s+=i
    #print(s)
-
-
-
-

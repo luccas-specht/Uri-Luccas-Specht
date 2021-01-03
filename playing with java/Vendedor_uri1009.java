@@ -15,6 +15,3 @@ public class Vendedor_uri1009 {
 		tc.close();
 	}
 }
-
-
-

@@ -30,9 +30,6 @@ if a>1 and b>4:
 
 elif
 
-
-
-
 #URI 1038
 
 
@@ -49,25 +46,7 @@ elif
 for i in xrange(1,10,2):
     print (i)
 
-
-
-
-
 #OK
 for i in range (2,101,2):
     if i%2==0:
         print(i)
-
-
-
-
-
-//////
-
-
-
-
-
-
-
-

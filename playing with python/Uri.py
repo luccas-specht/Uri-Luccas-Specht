@@ -7,7 +7,5 @@ if(a<b):
      if(i//5): 
          aux=i
          print('k') 
-
 else:
     print('h')
-  

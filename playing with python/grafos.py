@@ -15,9 +15,6 @@ def bfs(matriz,origem,v):
     indice=1
     while         
 
-
-
-
 while true:
  entrada=map(int, input().split())
  v=entrada[0]

@@ -27,4 +27,3 @@ f=input('add another number')
 soma=int(q)+ int(f)
 
 print('A soma entre {} e {} vale: {}'.format(q,f,soma))
-

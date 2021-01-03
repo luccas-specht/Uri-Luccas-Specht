@@ -3,9 +3,6 @@ package Uri;
 import java.util.Scanner;
 
 public class Uri1171 {
-
-
-	
 	public static void main(String[] args) {
 		
 		
@@ -51,11 +48,7 @@ public class Uri1171 {
 			}
 		
 		}
-		
-		
 		System.out.println(" repeticoes numero " + num + ": " + cont + " vezes");	
-	
-     
 	p.close();	
 	}
 }

@@ -28,15 +28,6 @@ public class valoresMaior100_matriz {
 			 }
 			 System.out.println("");
 		 }
-		 
-		 
 		 tc.close();		 
 	}
-
 }
-
-
-
-
-
-

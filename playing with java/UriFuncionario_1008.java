@@ -17,11 +17,3 @@ public class UriFuncionario_1008 {
 		tc.close();
 	}
 }
-
-
-
-
-
-
-
-
